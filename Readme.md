@@ -14,6 +14,8 @@ Well, the output consumption values from the script don't make sense. It looks l
 ### What I did
 I haven't used beam before, so I wanted to try it out. I started out with java which is my goto-language, but I figured it could be fun trying with python - it also looks quite elegant in comparison. Beam makes it easy to parallelize the map-side computations, and also, you can run it on cloud infrastructure on however many machines you'd like. That enables scalable parallel execution. 
 
+solution.py just writes to the console, but beam has a file sink which you would use to store big, maybe partitioned, output files on gs or where your data lives.  
+
 ### What I would do if I had more time
 I spent some hours getting to know beam, so I ran out of time. If I had more time, I'd make some tests of helper-functions and make error handling. Then I'd figure out how to get the correct values for the netflow. Finally I'd try to learn more about writing production code in python - or I might rewrite it in java where I feel more at home.
 
